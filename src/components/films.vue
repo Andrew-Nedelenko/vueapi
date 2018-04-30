@@ -1,14 +1,22 @@
 <template>
     <div class="films">
-        <p>in films</p>
+        <p id='myId'>{{ msg }}</p>
 
     </div>
 </template>
 
 <script>
-    export default {
-        name: "films"
 
+import axios from 'axios'
+
+    export default {
+        name: "films",
+        data (){
+            return {
+                msg: 'in the films'
+            }        
+        }
+        
     }
 </script>
 
